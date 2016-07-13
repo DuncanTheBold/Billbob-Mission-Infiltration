@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <image.h>
+#include <SDL2/SDL_image.h>
 #include "SDL2/SDL.h"
 
 //The struct that defines the players attributes

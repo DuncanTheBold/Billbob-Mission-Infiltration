@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <SDL_image.h>
 #include "SDL2/SDL.h"
 
 //The struct that defines the players attributes
@@ -23,10 +24,10 @@ void drawScreen(SDL_Renderer *renderer, Player *player) {
   SDL_Rect boundry_top = { 0, 0, 1024, 5 };
   SDL_Rect boundry_bottom = { 0, 635, 1024, 5 };
 
-  SDL_RenderFillRect(renderer, &wall_1);
-  SDL_RenderFillRect(renderer, &wall_2);
-  SDL_RenderFillRect(renderer, &wall_3);
-  SDL_RenderFillRect(renderer, &wall_4);
+  SDL_RenderFillRect(renderer, &boundry_left);
+  SDL_RenderFillRect(renderer, &boundry_right);
+  SDL_RenderFillRect(renderer, &boundry_top);
+  SDL_RenderFillRect(renderer, &boundry_bottom);
 
   //Drawing the player
   SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
